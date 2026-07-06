@@ -10,17 +10,10 @@ class Walker {
     };
 
     step(){
+        let stepx = random(-1, 1);
+        let stepy = random(-1, 1);
 
-        let choice = floor(random(4));
-
-        if(choice === 0){
-            this.x++;
-        } else if(choice === 1){
-            this.x--;
-        } else if(choice === 2){
-            this.y++;
-        }else if(choice === 3){
-            this.y--;
-        }
+        this.x += stepx;
+        this.y += stepy;
     }
 }
