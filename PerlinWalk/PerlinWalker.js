@@ -16,7 +16,7 @@ class Walker {
 
     show(){
         background(220);
-        stroke(0)
+        stroke(0);
         circle(this.x, this.y, 20);
     }
 }

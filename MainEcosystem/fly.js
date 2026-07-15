@@ -63,7 +63,19 @@ class Fly{
     show(){
       background(220);
       stroke(0);
-      circle(this.x, this.y, 50);
+
+      //body
+
+      let black = color('black');
+      fill(black);
+      circle(this.x, this.y, 10);
+
+
+      fill(255);
+      triangle(this.x + 3, this.y, this.x + 20 , this.y + 5, this.x + 20, this.y - 5);
+      triangle(this.x - 3, this.y, this.x - 20 , this.y + 5, this.x - 20, this.y - 5);
+
+      //wings      
     }
 
 }
